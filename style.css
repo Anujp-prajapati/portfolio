@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -18,6 +18,7 @@
 body {
   background-color: rgb(246, 247, 243);
   position: relative;
+  margin: 0;
 }
 
 .main {
@@ -28,6 +29,7 @@ body {
     ),
     url(./images/wallpaper1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navBar {
@@ -58,12 +60,13 @@ body {
   font-style: italic;
   color: rgb(249, 250, 251);
   font-size: 20px;
-  padding-top: px;
 }
 
 ul {
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 ul li {
@@ -87,40 +90,42 @@ ul li a:hover {
 /* Main Box */
 .mainbox {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 1rem;
   font-size: 14px;
   margin: 0px auto;
-  height: 550px;
-  padding: 30px 0px;
+  height: auto;
+  padding: 20px 10px;
 }
 
 .content {
   text-align: left;
-  padding: 50px 10px;
+  padding: 20px 10px;
 }
+
 .content p {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .content h2 {
   color: rgb(225, 94, 37);
   text-align: left;
-  font-size: 28px;
+  font-size: 18px;
   padding: 10px 20px;
 }
 
 .photo img {
   box-shadow: 0px 0px 5px rgb(215, 211, 211);
   border: none;
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   border-radius: 50%;
 }
 
 .cv {
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .cv button {
@@ -133,7 +138,7 @@ ul li a:hover {
   text-align: center;
   text-decoration: none;
   margin: 1px auto;
-  font-size: 20px;
+  font-size: 16px;
   transform: scale(1);
 }
 
@@ -151,7 +156,7 @@ ul li a:hover {
   transition: all 0.4s;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .about-section h1 {
@@ -166,18 +171,20 @@ ul li a:hover {
 .about-container {
   padding: 10px 0px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-container p {
   color: rgb(37, 37, 37);
-  font-size: 30px;
-  padding: 20px 50px;
+  font-size: 20px;
+  padding: 10px 20px;
 }
 
 .about-container span {
   color: rgb(33, 0, 0);
   font-weight: bold;
-  font-size: 35px;
+  font-size: 24px;
   transform: scale(1);
 }
 
@@ -186,13 +193,6 @@ ul li a:hover {
   text-shadow: 0px 0px 4px rgb(21, 215, 249);
   transform: scale(1.03);
   cursor: pointer;
-}
-.about-container p {
-  font-size: 20px;
-  text-align: left;
-  font-weight: 100;
-  text-align: justify;
-  justify-content: left;
 }
 
 /* Skills Section */
@@ -208,15 +208,15 @@ ul li a:hover {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  margin: 50px auto;
+  width: 100%;
+  margin: 20px auto;
   box-shadow: 0px 0px 5px black;
   border-radius: 7px;
   padding: 20px;
   gap: 20px;
   transform: scale(1);
   transition: all 0.35s;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: white;
 }
 
@@ -233,8 +233,9 @@ ul li a:hover {
 /* Social Media Section / Contact me */
 
 .smedia {
-  height: 200px;
+  height: auto;
   justify-content: space-evenly;
+  padding: 20px 0px;
 }
 
 .smedia h1 {
@@ -273,11 +274,78 @@ ul li a:hover {
   background-color: var(--primary-color);
   gap: 15px;
 }
+
 .footer p,
 .copyright {
   text-align: center;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(250, 250, 250);
   padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    padding-left: 10px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  ul li {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .mainbox {
+    padding: 20px 10px;
+  }
+
+  .content p {
+    font-size: 30px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .photo img {
+    max-width: 300px;
+  }
+
+  .cv button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .about-container p {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .about-container span {
+    font-size: 20px;
+  }
+
+  .skills {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .smedia {
+    padding: 20px 0px;
+  }
+
+  .smedia h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .footer p,
+  .copyright {
+    font-size: 14px;
+  }
 }
