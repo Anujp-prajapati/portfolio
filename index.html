@@ -1,118 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width,initials=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuj Prajapati | Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-    <title>Portfolio</title>
-    <!-- <h1>@ANUJ.CREATIONS</h1> -->
     <link rel="stylesheet" href="./style.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
 
   <body>
-    <div class="main">
-      <div class="navBar">
-        <h4 class="logo">@Anuj.</h4>
-        <div class="menu-items">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#tech-skills">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <!-- <li><a href="contact2.htm"></a></li> -->
-            <li><a href="#about" class="about">About me</a></li>
-            <li><a href="#media" class="contact me">Contact me</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mainbox">
-        <div class="content">
-          <p>Hi I am Anuj Kr Prajapati</p>
-          <h2>A Data science student.</h2>
-
-          <div class="cv">
-            <button type="button">My Resume</button>
-          </div>
-        </div>
-
-        <div class="photo">
-          <img src="./images/anuj.jpg" alt="error" />
-        </div>
+    <div class="navBar">
+      <h4 class="logo">@Anuj<span>.</span></h4>
+      <div class="menu-items">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#tech-skills">Skills</a></li>
+          <li><a href="#media">Contact</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- About Me -->
-    <div class="about-section" id="about">
-      <h1>About me</h1>
+    <div class="mainbox" id="home">
+      <div class="content">
+        <p>Hi, I am Anuj Kr Prajapati</p>
+        <h2>MIS Analyst & <br><span>Data Science Enthusiast</span></h2>
+        <div class="cv">
+          <button type="button" onclick="window.open('#', '_blank')">Download Resume</button>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="./images/anuj.jpg" alt="Anuj Prajapati" onerror="this.src='https://via.placeholder.com/350x350?text=Your+Photo'"/>
+      </div>
+    </div>
+
+    <section id="about">
+      <h1 class="section-title">About Me</h1>
       <div class="about-container">
         <p>
-          I am a <span>Anuj kr prajapati</span> currently in the 8th semester
-          (graduating in 2025), pursuing a career in computer science and
-          engineering from the Kalinga Institute of Industrial Technology,
-          Bhubneshwar, India. Born and brought up in Birgunj, Nepal, My idea
-          behind taking computer science and engineering is my love for
-          programming and the fact that I have the knowledge. I have a keen
-          interest in the field of machine learning and data science,and I'm
-          presently learning and working on the skills required to have
-          expertise in the same.
+          I am <span>Anuj Kr Prajapati</span>, a Computer Science and Engineering graduate (Class of 2025) from KIIT University, Bhubaneswar. Born and brought up in Birgunj, Nepal, my journey into tech was driven by a deep love for programming and logical problem-solving.
+          <br><br>
+          Currently, I work as an MIS Analyst, where I bridge the gap between raw data and business strategy. I have a keen interest in data science, machine learning, and workflow automation, and I am constantly expanding my expertise to build solutions that make a tangible business impact.
         </p>
       </div>
-    </div>
+    </section>
 
-    <!-- Skills section  -->
-    <div class="skill-section" id="tech-skills">
-      <h1>Skills</h1>
-      <div class="skills">
-        <img src="./images/c.svg" alt="error" />
-        <img src="./images/c++.svg" alt="error" />
-        <img src="./images/html.svg" alt="error" />
-        <img src="./images/css.svg" alt="error" />
-        <img src="./images/java.svg" alt="error" />
-        <img src="./images/python.svg" alt="error" />
-        <img src="./images/numpy.svg" alt="error" />
-        <img src="./images/pandas.svg" alt="error" />
-        <img src="./images/tableau.svg" alt="error" />
+    <section id="experience">
+      <h1 class="section-title">Experience & Projects</h1>
+      <div class="grid-container">
+        
+        <div class="card">
+          <h3>MIS Analyst</h3>
+          <h4>Shadowfax | SP&A Department</h4>
+          <p>
+            Managing and optimizing complex daily reporting pipelines. I leverage advanced spreadsheet logic and scripting to ensure high data integrity and timely delivery of critical business metrics to stakeholders.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Incentive Reporting Automation</h3>
+          <h4>Google Apps Script & Excel</h4>
+          <p>
+            Designed and implemented automated workflows utilizing Google Sheets, Excel, and Apps Script. This project completely automated the calculation and email distribution of incentive reports, eliminating hours of manual daily effort and reducing human error.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Data Analytics & Visualization</h3>
+          <h4>Python, Pandas & Tableau</h4>
+          <p>
+            Applied data science principles using Python and Tableau to clean, process, and visualize complex datasets, extracting actionable insights to support data-driven decision-making.
+          </p>
+        </div>
+
       </div>
-    </div>
+    </section>
 
-    <!-- Social Media -->
-    <div class="smedia" id="media">
-      <h1>Contact me</h1>
+    <section id="tech-skills">
+      <h1 class="section-title">Technical Skills</h1>
+      <div class="skills-wrapper">
+        <span class="skill-tag"><i class="fas fa-file-excel" style="color: #217346;"></i> Advanced Excel</span>
+        <span class="skill-tag"><i class="fas fa-table" style="color: #0f9d58;"></i> Google Sheets</span>
+        <span class="skill-tag"><i class="fas fa-code" style="color: #f4b400;"></i> Apps Script</span>
+        <span class="skill-tag"><i class="fab fa-python" style="color: #3776ab;"></i> Python</span>
+        <span class="skill-tag"><i class="fab fa-java" style="color: #e32d2f;"></i> Java</span>
+        <span class="skill-tag"><i class="fas fa-database" style="color: #e97b00;"></i> SQL / Pandas</span>
+        <span class="skill-tag"><i class="fas fa-chart-bar" style="color: #e97627;"></i> Tableau</span>
+        <span class="skill-tag"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML/CSS</span>
+        <span class="skill-tag">C / C++</span>
+      </div>
+    </section>
+
+    <section class="smedia" id="media">
+      <h1 class="section-title">Let's Connect</h1>
+      <p style="color: #94a3b8;">Feel free to reach out for collaborations or just a friendly chat!</p>
 
       <div class="social-media-icons">
-        <a href="https://www.facebook.com/anujprajapati011" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/anuj_prajapati01" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/AnujPra34888192" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/anuj-prajapati-6ab403230/"
-          target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Anujp-prajapati" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:anujprajapati3463@gmail.com"
-          ><i class="fas fa-envelope"></i
-        ></a>
+        <a href="https://www.facebook.com/anujprajapati011" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/anuj_prajapati01" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/AnujPra34888192" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/anuj-prajapati-6ab403230/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Anujp-prajapati" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:anujprajapati3463@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
-    </div>
+    </section>
 
-    <!-- footer -->
     <div class="footer">
       <div class="address">
         <p>KIIT University, Bhubaneswar</p>
         <p>Khorda, 751024, Odisha, India</p>
       </div>
-      <div class="copyright">&copy;Anuj Prajapati</div>
+      <div class="copyright" style="margin-top: 1rem;">
+        &copy; 2026 Anuj Prajapati. All rights reserved.
+      </div>
     </div>
   </body>
 </html>
