@@ -1,124 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anuj Prajapati | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Prajapati | MIS Analyst & Data Scientist</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
 
-  <body>
-    <div class="navBar">
-      <h4 class="logo">@Anuj<span>.</span></h4>
-      <div class="menu-items">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#tech-skills">Skills</a></li>
-          <li><a href="#media">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="mainbox" id="home">
-      <div class="content">
-        <p>Hi, I am Anuj Kr Prajapati</p>
-        <h2>MIS Analyst & <br><span>Data Science Enthusiast</span></h2>
-        <div class="cv">
-          <button type="button" onclick="window.open('#', '_blank')">Download Resume</button>
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Anuj<span>.</span></a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            
+            <nav class="nav-menu">
+                <a href="#about">About</a>
+                <a href="#resume">Experience</a>
+                <a href="#portfolio">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="nav-btn">Let's Talk</a>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <div class="photo">
-        <img src="./images/anuj.jpg" alt="Anuj Prajapati" onerror="this.src='https://via.placeholder.com/350x350?text=Your+Photo'"/>
-      </div>
-    </div>
-
-    <section id="about">
-      <h1 class="section-title">About Me</h1>
-      <div class="about-container">
-        <p>
-          I am <span>Anuj Kr Prajapati</span>, a Computer Science and Engineering graduate (Class of 2025) from KIIT University, Bhubaneswar. Born and brought up in Birgunj, Nepal, my journey into tech was driven by a deep love for programming and logical problem-solving.
-          <br><br>
-          Currently, I work as an MIS Analyst, where I bridge the gap between raw data and business strategy. I have a keen interest in data science, machine learning, and workflow automation, and I am constantly expanding my expertise to build solutions that make a tangible business impact.
-        </p>
-      </div>
+    <section id="hero" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Open to Opportunities</div>
+                <h1 class="name">Transforming Data into <br><span class="gradient-text">Actionable Strategy</span></h1>
+                <p class="summary">
+                    Hi, I'm <strong>Anuj Kr Prajapati</strong>. A passionate MIS Analyst & Data Science Professional based in Bengaluru. Currently building automated workflows and optimizing reporting pipelines at Shadowfax.
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+                    <a href="YOUR_DIRECT_DOWNLOAD_LINK_HERE" class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-frame">
+                    <img src="./images/anuj.jpg" alt="Anuj Prajapati" class="hero-image" onerror="this.src='https://via.placeholder.com/400x400?text=Profile+Photo'">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="experience">
-      <h1 class="section-title">Experience & Projects</h1>
-      <div class="grid-container">
-        
-        <div class="card">
-          <h3>MIS Analyst</h3>
-          <h4>Shadowfax | SP&A Department</h4>
-          <p>
-            Managing and optimizing complex daily reporting pipelines. I leverage advanced spreadsheet logic and scripting to ensure high data integrity and timely delivery of critical business metrics to stakeholders.
-          </p>
-        </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me<span>.</span></h2>
+            
+            <div class="bento-grid">
+                <div class="bento-card span-2">
+                    <h3>My Journey</h3>
+                    <p>Graduating from KIIT University (Class of 2025) with a B.Tech in Computer Science and Engineering, my roots go back to Birgunj, Nepal. Today, I'm thriving in Bengaluru's tech ecosystem, blending my deep love for logical programming with a strong focus on data analytics and process automation.</p>
+                </div>
+                
+                <div class="bento-card highlight">
+                    <i class="fas fa-bolt card-icon"></i>
+                    <h3>Current Focus</h3>
+                    <p>Bridging raw operational data with high-level business strategy at the SP&A Department, Shadowfax.</p>
+                </div>
 
-        <div class="card">
-          <h3>Incentive Reporting Automation</h3>
-          <h4>Google Apps Script & Excel</h4>
-          <p>
-            Designed and implemented automated workflows utilizing Google Sheets, Excel, and Apps Script. This project completely automated the calculation and email distribution of incentive reports, eliminating hours of manual daily effort and reducing human error.
-          </p>
-        </div>
+                <div class="bento-card stat">
+                    <i class="fas fa-map-marker-alt card-icon"></i>
+                    <h3>Base</h3>
+                    <p>Bengaluru, India</p>
+                </div>
 
-        <div class="card">
-          <h3>Data Analytics & Visualization</h3>
-          <h4>Python, Pandas & Tableau</h4>
-          <p>
-            Applied data science principles using Python and Tableau to clean, process, and visualize complex datasets, extracting actionable insights to support data-driven decision-making.
-          </p>
+                <div class="bento-card stat">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <h3>Education</h3>
+                    <p>B.Tech CSE, KIIT</p>
+                </div>
+            </div>
         </div>
-
-      </div>
     </section>
 
-    <section id="tech-skills">
-      <h1 class="section-title">Technical Skills</h1>
-      <div class="skills-wrapper">
-        <span class="skill-tag"><i class="fas fa-file-excel" style="color: #217346;"></i> Advanced Excel</span>
-        <span class="skill-tag"><i class="fas fa-table" style="color: #0f9d58;"></i> Google Sheets</span>
-        <span class="skill-tag"><i class="fas fa-code" style="color: #f4b400;"></i> Apps Script</span>
-        <span class="skill-tag"><i class="fab fa-python" style="color: #3776ab;"></i> Python</span>
-        <span class="skill-tag"><i class="fab fa-java" style="color: #e32d2f;"></i> Java</span>
-        <span class="skill-tag"><i class="fas fa-database" style="color: #e97b00;"></i> SQL / Pandas</span>
-        <span class="skill-tag"><i class="fas fa-chart-bar" style="color: #e97627;"></i> Tableau</span>
-        <span class="skill-tag"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML/CSS</span>
-        <span class="skill-tag">C / C++</span>
-      </div>
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience<span>.</span></h2>
+            
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <span class="timeline-date">Present</span>
+                    <h3>MIS Analyst <span class="highlight-text">@ Shadowfax</span></h3>
+                    <h4>SP&A Department</h4>
+                    <p>Spearheading daily MIS reporting and data analysis. I engineer automated pipelines using Google Apps Script and advanced spreadsheet logic, guaranteeing zero-error reporting and rapid delivery of critical metrics to top-level management.</p>
+                </div>
+                
+                <div class="timeline-item glass-card">
+                    <span class="timeline-date">Graduated 2025</span>
+                    <h3>B.Tech in Computer Science & Engineering</h3>
+                    <h4>KIIT University, Bhubaneswar</h4>
+                    <p>Specialized in Data Science, Machine Learning, and core programming. Developed a highly analytical mindset focused on algorithmic thinking and database management.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="smedia" id="media">
-      <h1 class="section-title">Let's Connect</h1>
-      <p style="color: #94a3b8;">Feel free to reach out for collaborations or just a friendly chat!</p>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Work<span>.</span></h2>
+            
+            <div class="project-grid">
+                <div class="project-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-robot"></i></div>
+                    <h3>Automated Incentive Pipeline</h3>
+                    <p>Engineered an end-to-end automation system via Apps Script and Excel to calculate complex team incentives and autonomously dispatch personalized stakeholder emails.</p>
+                    <div class="tags">
+                        <span>Apps Script</span><span>Excel</span><span>Automation</span>
+                    </div>
+                </div>
 
-      <div class="social-media-icons">
-        <a href="https://www.facebook.com/anujprajapati011" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/anuj_prajapati01" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/AnujPra34888192" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/anuj-prajapati-6ab403230/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Anujp-prajapati" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:anujprajapati3463@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      </div>
+                <div class="project-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Operational Analytics Dashboards</h3>
+                    <p>Designed live-updating MIS dashboards to track core KPIs, utilizing advanced visualization to facilitate rapid, data-driven management decisions at Shadowfax.</p>
+                    <div class="tags">
+                        <span>Tableau</span><span>Data Viz</span><span>KPIs</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-database"></i></div>
+                    <h3>Dynamic Data Formatting Tools</h3>
+                    <p>Built custom array formulas and validation frameworks within spreadsheets to standardize cross-departmental data entry, dramatically reducing downstream analytical errors.</p>
+                    <div class="tags">
+                        <span>Google Sheets</span><span>Data Cleaning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <div class="footer">
-      <div class="address">
-        <p>KIIT University, Bhubaneswar</p>
-        <p>Khorda, 751024, Odisha, India</p>
-      </div>
-      <div class="copyright" style="margin-top: 1rem;">
-        &copy; 2026 Anuj Prajapati. All rights reserved.
-      </div>
-    </div>
-  </body>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Tech Arsenal<span>.</span></h2>
+            
+            <div class="skills-wrapper">
+                <div class="skill-pill"><i class="fas fa-file-excel"></i> Advanced Excel</div>
+                <div class="skill-pill"><i class="fas fa-table"></i> Google Sheets</div>
+                <div class="skill-pill"><i class="fas fa-code"></i> Apps Script</div>
+                <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-pill"><i class="fas fa-chart-bar"></i> Tableau</div>
+                <div class="skill-pill"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-pill"><i class="fas fa-square-root-alt"></i> Pandas / NumPy</div>
+                <div class="skill-pill"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-pill">C / C++</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container text-center">
+            <h2 class="footer-title">Let's build something <span class="gradient-text">extraordinary.</span></h2>
+            <p class="footer-subtitle">Always open to discussing data analytics, automation solutions, or new opportunities.</p>
+            
+            <a href="mailto:anujprajapati3463@gmail.com" class="footer-email">anujprajapati3463@gmail.com</a>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anuj-prajapati-6ab403230/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Anujp-prajapati" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/AnujPra34888192" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Bengaluru, Karnataka, India | &copy; 2026 Anuj Prajapati.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
